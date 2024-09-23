@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import loginImage from "../assets/login.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const onFinish = (values) => {
@@ -81,9 +82,9 @@ const Login = () => {
 
             <div className="text-center mt-4">
               Or{" "}
-              <a href="#" className="text-blue-600">
+              <Link to="/signup" className="text-blue-600">
                 register now!
-              </a>
+              </Link>
             </div>
           </Form>
         </div>
